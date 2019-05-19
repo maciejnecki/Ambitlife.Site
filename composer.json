@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "ambitlife/site",
+    "autoload": {
+        "psr-4": {
+            "Ambitlife\\Site\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Ambitlife.Site"
+        }
+    }
+}
