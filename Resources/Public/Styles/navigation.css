@@ -1,0 +1,56 @@
+/* --------------------------
+Navigation Stylesheet:
+    -
+Created By:
+    Maciej Necki
+Contents:
+    -
+-------------------------- */
+
+/* -------------------------- Neos Navigation Elements */
+
+nav.menu {
+    background: #000;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+
+    position: fixed;
+    width: 100vw;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav.menu > ul {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+nav.menu > ul > li {
+    display: inline;
+    padding-left: 12px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 2px;
+}
+
+nav.menu > ul > li > a {
+    color: #5aaef2;
+}
+
+div.brand {
+    display: block;
+    position: absolute;
+    top: 20px;
+    padding-left: 20px;
+}
+
+div.brand > a {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}

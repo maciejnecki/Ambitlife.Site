@@ -2,34 +2,54 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <html>
+
+<!--################################################################################### Head-->
 <head>
+
+	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Styles-->
 	<f:section name="stylesheets">
-		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
+		<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:'Styles/default.css', package:'Ambitlife.Site')}"/>
+		<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:'Styles/navigation.css', package:'Ambitlife.Site')}"/>
+		<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:'Styles/footer.css', package:'Ambitlife.Site')}"/>
 	</f:section>
+
+	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Scripts-->
 	<f:section name="headScripts">
-		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
+
+	</f:section>
+
+	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Meta-->
+	<f:section name="meta">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 	</f:section>
 </head>
+
+<!--################################################################################### Body-->
 <body>
 <f:section name="body">
-	<nav class="menu">
-		{parts.menu -> f:format.raw()}
-	</nav>
+
+	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Menu-->
+	<f:render partial="Navigation" arguments="{_all}" />
+
+	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Content-->
 	<div class="content">
 		{content.main -> f:format.raw()}
-
-	<f:comment>
-		If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
-		section to actually render in in your output. Remove the "f:comment" tag and this text, and adjust the markup as you
-		like.
-
-		{content.sidebar -> f:format.raw()}
-	</f:comment>
-
 	</div>
+
+	<!--################################################################################### Footer-->
+	<f:if condition="{neos:rendering.inBackend()}">
+		<f:else>
+			<f:render partial="Footer" arguments="{_all}" />
+		</f:else>
+	</f:if>
 </f:section>
+
+<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Scripts-->
 <f:section name="bodyScripts">
 	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
 </f:section>
+
 </body>
+
 </html>

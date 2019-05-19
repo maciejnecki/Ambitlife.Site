@@ -1,0 +1,214 @@
+/* --------------------------
+Default Stylesheet:
+    This CSS contains only standard HTML elements, no custom classes or ids
+Created By:
+    Maciej Necki
+Contents:
+    - File Scope
+    - Typography
+    - Lists
+    - Buttons
+    - Design Elements
+    - Images
+    - Mobile Optimisations
+-------------------------- */
+
+/* -------------------------- File Scope */
+
+html {
+    margin: 0 auto;
+    overflow-x: none;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 130px;
+
+    background-color: #f0f3f7;
+
+    color: #0b0c0d;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    word-wrap: break-word;
+
+    -webkit-text-size-adjust: none;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+
+    /*For footer allignment, substracted number must be footer height.*/
+    min-height: calc(100vh - 70px);
+}
+
+/* -------------------------- Typography */
+
+pre {
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #b6babf;
+    overflow: auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+code {
+    font-family: Consolas, monospace, Monaco;
+    color: #005ba6;
+    border: 1px solid #b6babf;
+    padding:10px;
+    background-color:#fff;
+    margin-bottom: 20px;
+}
+
+mark {
+    background-color: #5aaef2;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+h1 {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.7em;
+}
+
+h2 {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.7em;
+}
+
+h3 {
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7em;
+}
+
+h4 {
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.7em;
+}
+
+h5 {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+    color: #291e69;
+    cursor: pointer;
+
+    -o-transition: .3s;
+    -ms-transition:.3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+    color: #100a33;
+    cursor: pointer;
+
+    -o-transition: .3s;
+    -ms-transition:.3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+p {
+    line-height: 1.7;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/* -------------------------- Lists */
+
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+
+/* -------------------------- Buttons */
+
+
+button {
+    font-family: Helvetica Neue, 'avenir_lt_45_bookregular', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+    padding: 7px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #291e69;
+    color: #fff;
+    cursor: pointer;
+
+    -o-transition:0.2s;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition:0.2s;
+    transition:0.2s;
+
+    box-shadow: 0 1px 2px #141F33;
+}
+
+button:hover {
+    transform: translateX(1px);
+    background: #090426;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateX(3px);
+    background: #090426;
+    cursor: pointer;
+}
+
+/* -------------------------- Design Elements */
+
+hr {
+    border: 0.01em solid #b6babf;
+    margin: 0 auto;
+    width: 75%;
+}
+
+div {
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+
+/* -------------------------- Images */
+
+img {
+    width: 100%;
+    max-width: 800px;
+}
