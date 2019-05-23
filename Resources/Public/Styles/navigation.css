@@ -10,7 +10,7 @@ Contents:
 /* -------------------------- Neos Navigation Elements */
 
 nav.menu {
-    background: #000;
+    background: red;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 10px;
