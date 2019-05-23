@@ -30,7 +30,11 @@
 <f:section name="body">
 
 	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Menu-->
-	<f:render partial="Navigation" arguments="{_all}" />
+	<f:if condition="{neos:rendering.inBackend()}">
+		<f:else>
+			<f:render partial="Navigation" arguments="{_all}" />
+		</f:else>
+	</f:if>
 
 	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Content-->
 	<div class="content">

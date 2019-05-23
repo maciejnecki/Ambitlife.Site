@@ -1,0 +1,19 @@
+'Ambitlife.Site:StandardButton':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    label: 'Standard Button'
+    group: 'general'
+    inspector:
+      groups:
+        image:
+          label: 'Image'
+          icon: 'icon-image'
+          position: 1
+  properties:
+    title:
+      type: string
+      defaultValue: 'Button Title'
+      ui:
+        label: 'Title'
+        inlineEditable: TRUE

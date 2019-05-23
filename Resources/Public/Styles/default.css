@@ -46,6 +46,10 @@ body {
     min-height: calc(100vh - 70px);
 }
 
+.content {
+    padding-top: 70px;
+}
+
 /* -------------------------- Typography */
 
 pre {
