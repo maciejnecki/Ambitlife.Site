@@ -113,5 +113,6 @@ div.neos-nodetypes-html {
 @media(max-width: 830px) {
     div.content {
         padding: 16px;
+        padding-top: 50px;
     }
 }
