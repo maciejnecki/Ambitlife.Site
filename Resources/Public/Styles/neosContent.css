@@ -82,7 +82,10 @@ div.columns-25-25-25-25 > div.column {
 /* -------------------------- Content */
 
 div.content {
-    padding: 30px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
 }
 
 div.neos-contentcollection {
