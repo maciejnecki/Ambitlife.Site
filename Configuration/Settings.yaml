@@ -1,0 +1,16 @@
+Neos:
+  Flow:
+    error:
+      exceptionHandler:
+        renderingGroups:
+          notFoundExceptions:
+            options:
+              variables:
+                path: '404'
+    mvc:
+      routes:
+        Ambitlife.Site: true
+        'Neos.Neos':
+          variables:
+            # Remove .html from sites
+            'defaultUriSuffix': ''

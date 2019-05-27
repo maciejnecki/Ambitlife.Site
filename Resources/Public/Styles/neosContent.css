@@ -96,6 +96,18 @@ div.neos-nodetypes-html {
     padding: 0;
 }
 
+.neos-alignment-right {
+    text-align: right;
+}
+
+.neos-alignment-center {
+    text-align: center;
+}
+.neos-alignment-left {
+    text-align: left;
+}
+
+
 /* -------------------------- Content Mobile Optimisations */
 
 @media(max-width: 830px) {
