@@ -6,7 +6,7 @@
     'Neos.Neos:Document': true
   ui:
     icon: 'icon-file'
-    label: 'Ambitlife.Site Custom Page'
+    label: 'Ambitlife Page'
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'

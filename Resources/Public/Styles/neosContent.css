@@ -1,0 +1,102 @@
+/* --------------------------
+Stylesheet handling default neos elements.
+Created By:
+    Maciej Necki
+Contents:
+    - Columns
+    - Columns Mobile Optimisations
+    - Content
+    - Content Mobile Optimisations
+
+-------------------------- */
+
+/* -------------------------- Columns */
+
+div.columns-50-50 > div.column {
+    display: inline-block;
+    width: 47%;
+    padding: 10px;
+}
+
+div.columns-33-33-33 > div.column {
+    display: inline-block;
+    width: 31%;
+    padding: 10px;
+
+}
+
+div.columns-25-25-25-25 > div.column {
+    display: inline-block;
+    width: 23%;
+    padding: 10px;
+
+}
+
+/* -------------------------- Columns Mobile Optimisations */
+
+@media(max-width: 830px) {
+    div.columns-50-50 > div.column {
+        display: block;
+        width: 100%;
+    }
+
+    div.columns-33-33-33 > div.column {
+        display: block;
+        width: 100%;
+    }
+
+    div.columns-25-25-25-25 > div.column {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1060px) {
+    div.columns-50-50 > div.column {
+    }
+
+    div.columns-33-33-33 > div.column {
+        display: inline-block;
+        width: 100%;
+    }
+
+    div.columns-25-25-25-25 > div.column {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1200px) {
+    div.columns-50-50 > div.column {
+    }
+
+    div.columns-33-33-33 > div.column {
+    }
+
+    div.columns-25-25-25-25 > div.column {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* -------------------------- Content */
+
+div.content {
+    padding: 30px;
+}
+
+div.neos-contentcollection {
+    padding: 0;
+}
+
+div.neos-nodetypes-html {
+    padding: 0;
+}
+
+/* -------------------------- Content Mobile Optimisations */
+
+@media(max-width: 830px) {
+    div.content {
+        padding: 16px;
+    }
+}
