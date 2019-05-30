@@ -7,10 +7,13 @@ Contents:
     - Columns Mobile Optimisations
     - Content
     - Content Mobile Optimisations
+    - Forms
 
 -------------------------- */
 
 /* -------------------------- Columns */
+
+/* -------------------------- Columns Double */
 
 div.columns-50-50 > div.column {
     display: inline-block;
@@ -18,12 +21,64 @@ div.columns-50-50 > div.column {
     padding: 10px;
 }
 
+div.columns-75-25 > div.column:first-child {
+     display: inline-block;
+     width: 70.5%;
+     padding: 10px;
+ }
+
+div.columns-75-25 > div.column:last-child {
+    display: inline-block;
+    width: 23.5%;
+    padding: 10px;
+}
+
+div.columns-25-75 > div.column:first-child {
+    display: inline-block;
+    width: 23.5%;
+    padding: 10px;
+}
+
+div.columns-25-75 > div.column:last-child {
+    display: inline-block;
+    width: 70.5%;
+    padding: 10px;
+}
+
+div.columns-66-33 > div.column:first-child {
+    display: inline-block;
+    width: 62%;
+    padding: 10px;
+}
+
+div.columns-66-33 > div.column:last-child {
+    display: inline-block;
+    width: 31%;
+    padding: 10px;
+}
+
+div.columns-33-66 > div.column:first-child {
+    display: inline-block;
+    width: 31%;
+    padding: 10px;
+}
+
+div.columns-33-66 > div.column:last-child {
+    display: inline-block;
+    width: 62%;
+    padding: 10px;
+}
+
+/* -------------------------- Columns Triple */
+
 div.columns-33-33-33 > div.column {
     display: inline-block;
     width: 31%;
     padding: 10px;
 
 }
+
+/* -------------------------- Columns Quadruple */
 
 div.columns-25-25-25-25 > div.column {
     display: inline-block;
@@ -113,6 +168,49 @@ div.neos-nodetypes-html {
 @media(max-width: 830px) {
     div.content {
         padding: 16px;
-        padding-top: 50px;
+        padding-top: 70px;
     }
+}
+
+/* -------------------------- Forms */
+
+.neos-nodetypes-form {
+    width: 45%;
+}
+
+@media(max-width: 830px) {
+    .neos-nodetypes-form {
+        width: 100%;
+    }
+}
+
+.form-navigation > ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+fieldset > legend {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 16px;
+}
+
+input, textarea {
+    width: 97%;
+    border: none;
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+div.clearfix {
+    padding-bottom: 16px;
 }

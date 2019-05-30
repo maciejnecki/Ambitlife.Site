@@ -14,3 +14,6 @@ Neos:
           variables:
             # Remove .html from sites
             'defaultUriSuffix': ''
+  Form:
+    yamlPersistenceManager:
+      savePath: 'resource://Ambitlife.Site/Private/Form/'

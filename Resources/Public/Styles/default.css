@@ -4,6 +4,7 @@ Default Stylesheet:
 Created By:
     Maciej Necki
 Contents:
+    - CSS Variables
     - File Scope
     - Typography
     - Lists
@@ -12,6 +13,14 @@ Contents:
     - Images
     - Mobile Optimisations
 -------------------------- */
+
+/* -------------------------- CSS Variables */
+
+:root {
+    --theme-color: #0b0c0d;
+    --tint-color: #790100;
+    --accent-color: #bf0029;
+}
 
 /* -------------------------- File Scope */
 
@@ -46,6 +55,16 @@ body {
     min-height: calc(100vh - 70px);
 }
 
+.center-wrapper {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.container-box {
+    width: 100%;
+}
+
 /* -------------------------- Typography */
 
 pre {
@@ -59,7 +78,7 @@ pre {
 
 code {
     font-family: Consolas, monospace, Monaco;
-    color: #005ba6;
+    color: var(--accent-color);
     border: 1px solid #b6babf;
     padding:10px;
     background-color:#fff;
@@ -67,7 +86,7 @@ code {
 }
 
 mark {
-    background-color: #5aaef2;
+    background-color: var(--accent-color);
     padding: 3px;
     border-radius: 3px;
 }
@@ -109,7 +128,7 @@ h5 {
 
 a {
     text-decoration: none;
-    color: #291e69;
+    color: var(--tint-color);
     cursor: pointer;
 
     -o-transition: .3s;
@@ -121,7 +140,7 @@ a {
 
 a:hover, a:active, a:focus {
     text-decoration: underline;
-    color: #100a33;
+    color: var(--accent-color);
     cursor: pointer;
 
     -o-transition: .3s;
@@ -167,8 +186,8 @@ button {
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #790100;
     color: #fff;
+    background: var(--theme-color);
     cursor: pointer;
 
     -o-transition:0.2s;
@@ -177,18 +196,30 @@ button {
     -webkit-transition:0.2s;
     transition:0.2s;
 
-    box-shadow: 0 1px 2px #141F33;
+    box-shadow: 0 1px 2px #333333;
+}
+
+button.--theme-color {
+    background: var(--theme-color);
+}
+
+button.--tint-color {
+    background: var(--tint-color);
+}
+
+button.--accent-color {
+    background: var(--accent-color);
 }
 
 button:hover {
     transform: translateX(1px);
-    background: #090426;
+    background: var(--theme-color);
     cursor: pointer;
 }
 
 button:active {
     transform: translateX(3px);
-    background: #090426;
+    background: var(--theme-color);
     cursor: pointer;
 }
 

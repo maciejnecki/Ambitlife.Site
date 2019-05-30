@@ -2,8 +2,16 @@
   superTypes:
     'Neos.Neos:Content': TRUE
   ui:
+    inspector:
+      groups:
+        advanced:
+            label: 'Options'
+            icon: 'icon-adjust'
+            position: 1
     label: 'Standard Button'
+    icon: 'icon-toggle-on'
     group: 'general'
+    position: 3
   properties:
     title:
       type: string
@@ -11,3 +19,58 @@
       ui:
         label: 'Title'
         inlineEditable: TRUE
+    url:
+      type: string
+      ui:
+        label: 'Button Link'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+          editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
+          editorOptions:
+            placeholder: 'http://... or /siteName'
+    color:
+      type: string
+      defaultValue: '--tint-color'
+      ui:
+        label: 'Button Color'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Tint'
+            values:
+              --tint-color:
+                label: 'Tint'
+              --theme-color:
+                label: 'Theme'
+              --accent-color:
+                label: 'Accent'
+
+'Ambitlife.Site:Box':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    group: structure
+    label: Box
+    icon: icon-columns
+    inlineEditable: true
+    inspector:
+      groups:
+        advanced:
+          label: 'Options'
+          icon: 'icon-adjust'
+          position: 1
+  properties:
+    center:
+      type: boolean
+      defaultValue: TRUE
+      ui:
+        label: 'Center content inside?'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+  childNodes:
+    column0:
+      type: 'Neos.Neos:ContentCollection'

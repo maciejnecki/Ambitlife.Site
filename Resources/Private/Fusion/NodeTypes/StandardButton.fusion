@@ -2,4 +2,6 @@ prototype(Ambitlife.Site:StandardButton) < prototype(Neos.Neos:Content) {
     templatePath = 'resource://Ambitlife.Site/Private/Templates/NodeTypes/StandardButton.html'
 
     title = ${q(node).property('title')}
+    url = ${q(node).property('url')}
+    color = ${q(node).property('color')}
 }

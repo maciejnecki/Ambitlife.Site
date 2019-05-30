@@ -1,0 +1,8 @@
+prototype(Ambitlife.Site:Box) < prototype(Neos.Neos:Content) {
+    templatePath = 'resource://Ambitlife.Site/Private/Templates/NodeTypes/Box.html'
+    columnContent = Neos.Neos:ContentCollection
+    columnContent {
+        nodePath = 'column0'
+    }
+    center = ${q(node).property('center')}
+}
