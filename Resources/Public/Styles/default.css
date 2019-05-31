@@ -5,7 +5,9 @@ Created By:
     Maciej Necki
 Contents:
     - CSS Variables
+    - Color Applicators
     - File Scope
+    - Boudning boxes
     - Typography
     - Lists
     - Buttons
@@ -20,6 +22,35 @@ Contents:
     --theme-color: #0b0c0d;
     --tint-color: #790100;
     --accent-color: #bf0029;
+    --accent-alt-color: #272a2e;
+    --text-color-light: #0b0c0d;
+    --text-color-dark: #f7f7f7
+}
+
+/* -------------------------- Color Applicators */
+
+.--theme-color {
+    background: var(--theme-color);
+    color: var(--text-color-dark);
+}
+
+.--tint-color {
+    background: var(--tint-color);
+    color: var(--text-color-dark)
+}
+
+.--accent-color {
+    background: var(--accent-color);
+    color: var(--text-color-dark)
+}
+
+.--accent-alt-color {
+    background: var(--accent-alt-color);
+    color: var(--text-color-dark)
+}
+
+.--blue {
+    background: #085fac;
 }
 
 /* -------------------------- File Scope */
@@ -38,7 +69,7 @@ body {
 
     background-color: #f2f2f2;
 
-    color: #0b0c0d;
+    color: var(--text-color-light);
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.7em;
@@ -55,14 +86,25 @@ body {
     min-height: calc(100vh - 70px);
 }
 
+/* -------------------------- Bounding Boxes */
+
 .center-wrapper {
-    width: 100%;
     text-align: center;
     align-content: center;
 }
 
 .container-box {
-    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+@media(max-width: 830px) {
+    .container-box {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 /* -------------------------- Typography */
@@ -197,18 +239,6 @@ button {
     transition:0.2s;
 
     box-shadow: 0 1px 2px #333333;
-}
-
-button.--theme-color {
-    background: var(--theme-color);
-}
-
-button.--tint-color {
-    background: var(--tint-color);
-}
-
-button.--accent-color {
-    background: var(--accent-color);
 }
 
 button:hover {

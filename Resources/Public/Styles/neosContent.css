@@ -8,6 +8,7 @@ Contents:
     - Content
     - Content Mobile Optimisations
     - Forms
+    - Tables
 
 -------------------------- */
 
@@ -17,74 +18,61 @@ Contents:
 
 div.columns-50-50 > div.column {
     display: inline-block;
-    width: 47%;
-    padding: 10px;
+    width: 50%;
 }
 
 div.columns-75-25 > div.column:first-child {
      display: inline-block;
-     width: 70.5%;
-     padding: 10px;
+     width: 75%;
  }
 
 div.columns-75-25 > div.column:last-child {
     display: inline-block;
-    width: 23.5%;
-    padding: 10px;
+    width: 25%;
 }
 
 div.columns-25-75 > div.column:first-child {
     display: inline-block;
-    width: 23.5%;
-    padding: 10px;
+    width: 25%;
 }
 
 div.columns-25-75 > div.column:last-child {
     display: inline-block;
-    width: 70.5%;
-    padding: 10px;
+    width: 75%;
 }
 
 div.columns-66-33 > div.column:first-child {
     display: inline-block;
-    width: 62%;
-    padding: 10px;
+    width: 66%;
 }
 
 div.columns-66-33 > div.column:last-child {
     display: inline-block;
-    width: 31%;
-    padding: 10px;
+    width: 33%;
 }
 
 div.columns-33-66 > div.column:first-child {
     display: inline-block;
-    width: 31%;
-    padding: 10px;
+    width: 33%;
 }
 
 div.columns-33-66 > div.column:last-child {
     display: inline-block;
-    width: 62%;
-    padding: 10px;
+    width: 66%;
 }
 
 /* -------------------------- Columns Triple */
 
 div.columns-33-33-33 > div.column {
     display: inline-block;
-    width: 31%;
-    padding: 10px;
-
+    width: 33.33333333333333333333%;
 }
 
 /* -------------------------- Columns Quadruple */
 
 div.columns-25-25-25-25 > div.column {
     display: inline-block;
-    width: 23%;
-    padding: 10px;
-
+    width: 25%;
 }
 
 /* -------------------------- Columns Mobile Optimisations */
@@ -138,8 +126,6 @@ div.columns-25-25-25-25 > div.column {
 
 div.content {
     padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 100px;
 }
 
@@ -167,7 +153,6 @@ div.neos-nodetypes-html {
 
 @media(max-width: 830px) {
     div.content {
-        padding: 16px;
         padding-top: 70px;
     }
 }
@@ -213,4 +198,40 @@ input, textarea {
 
 div.clearfix {
     padding-bottom: 16px;
+}
+
+/* -------------------------- Tables */
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+thead, tbody, tr, th, td { display: block; }
+
+thead tr {
+    /* fallback */
+    width: 97%;
+    /* minus scroll bar width */
+    width: -webkit-calc(100% - 16px);
+    width:    -moz-calc(100% - 16px);
+    width:         calc(100% - 16px);
+}
+
+tr:after {  /* clearing float */
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+tbody {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody td, thead th {
+    width: 19%;  /* 19% is less than (100% / 5 cols) = 20% */
+    float: left;
 }

@@ -1,6 +1,6 @@
 {namespace fusion=Neos\Fusion\ViewHelpers}
 
-<div class="container-box {f:if(condition:center,then:'center-wrapper')}">
+<div class="container-box {f:if(condition:center,then:'center-wrapper')} {color}" style="{f:if(condition:applyHeight,then:'height:{artificialHeight};')}" >
     <div class="column">
         <fusion:render path="columnContent" />
     </div>

@@ -64,8 +64,12 @@ div.brand > a {
     font-weight: 600;
 }
 
+li.active, li.current {
+    color: var(--accent-alt-color);
+}
+
 /* Sub Menu*/
-li.current > ul, li.normal > ul {
+li.current > ul, li.normal > ul, li.active > ul {
     visibility: hidden;
     display: none;
 }

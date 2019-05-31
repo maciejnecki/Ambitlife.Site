@@ -5,4 +5,7 @@ prototype(Ambitlife.Site:Box) < prototype(Neos.Neos:Content) {
         nodePath = 'column0'
     }
     center = ${q(node).property('center')}
+    color = ${q(node).property('color')}
+    artificialHeight = ${q(node).property('artificialHeight')}
+    applyHeight = ${q(node).property('applyHeight')}
 }

@@ -1,3 +1,4 @@
+# Standard Button
 'Ambitlife.Site:StandardButton':
   superTypes:
     'Neos.Neos:Content': TRUE
@@ -47,7 +48,10 @@
                 label: 'Theme'
               --accent-color:
                 label: 'Accent'
+              --blue:
+                label: 'Blue'
 
+# Container Box for elements
 'Ambitlife.Site:Box':
   superTypes:
     'Neos.Neos:Content': TRUE
@@ -71,6 +75,46 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'advanced'
+    applyHeight:
+      type: boolean
+      defaultValue: TRUE
+      ui:
+        label: 'Assign artificial height?'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+    artificialHeight:
+      type: string
+      ui:
+        label: 'Height'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+          editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
+          editorOptions:
+            placeholder: 'eg. 120px'
+    color:
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Box background Color'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Tint'
+            values:
+              --no-color:
+                label: 'Transparent'
+              --tint-color:
+                label: 'Tint'
+              --theme-color:
+                label: 'Theme'
+              --accent-color:
+                label: 'Accent'
+              --accent-alt-color:
+                label: 'Accent Alt'
   childNodes:
     column0:
       type: 'Neos.Neos:ContentCollection'
