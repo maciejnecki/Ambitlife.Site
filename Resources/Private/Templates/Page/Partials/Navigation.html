@@ -5,5 +5,22 @@
         </a>
     </div>
 
-    {parts.menu -> f:format.raw()}
+    <!-- Sky Launch Nav -->
+    <!-- The overlay -->
+    <div id="skyLaunchNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a> -->
+        <i class="fa fa-times closebtn" aria-hidden="true" onclick="closeNav()"></i>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            {parts.menu -> f:format.raw()}
+        </div>
+
+    </div>
+
+    <!-- Element to open/show the overlay navigation menu -->
+    <span class="sky-launcher" onclick="openNav()"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>
+    <!-- /Sky Launch Nav -->
 </nav>

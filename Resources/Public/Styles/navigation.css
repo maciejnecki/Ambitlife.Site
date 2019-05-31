@@ -7,6 +7,13 @@ Contents:
     -
 -------------------------- */
 
+:root {
+    --theme-color: #0b0c0d;
+    --tint-color: #790100;
+    --accent-color: #bf0029;
+    --accent-alt-color: #272a2e;
+}
+
 /* -------------------------- Neos Navigation Elements */
 
 nav.menu {
@@ -22,6 +29,7 @@ nav.menu {
 
     padding-left: 0;
     padding-right: 0;
+    height: 50px;
 
     z-index: 9;
 }
@@ -29,7 +37,6 @@ nav.menu {
 nav.menu > ul {
     display: inline-block;
     padding-left: 0;
-    padding-right: 20px;
 }
 
 nav.menu > ul > li {
@@ -41,7 +48,7 @@ nav.menu > ul > li {
 }
 
 nav.menu > ul > li > a {
-    color: #cc2929;
+    color: var(--tint-color);
 }
 
 div.brand {
@@ -55,4 +62,43 @@ div.brand > a {
     font-size: 18px;
     color: white;
     font-weight: 600;
+}
+
+/* Sub Menu*/
+li.current > ul, li.normal > ul {
+    visibility: hidden;
+    display: none;
+}
+
+/* Sub Menu*/
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    position: absolute;
+    visibility: visible;
+    display: block;
+    background: var(--accent-alt-color);
+    list-style: none;
+    text-align: left;
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ul.mobileMenu {
+    visibility: hidden;
+}
+
+@media(max-width: 830px) {
+    nav > ul {
+        visibility: hidden;
+    }
+
+    ul.mobileMenu {
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
 }
