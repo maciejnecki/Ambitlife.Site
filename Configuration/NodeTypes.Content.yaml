@@ -58,7 +58,7 @@
   ui:
     group: structure
     label: Box
-    icon: icon-columns
+    icon: icon-square
     inlineEditable: true
     inspector:
       groups:

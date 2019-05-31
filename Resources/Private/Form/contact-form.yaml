@@ -42,16 +42,16 @@ finishers:
     identifier: 'Neos.Form:Email'
     options:
       templatePathAndFilename: resource://Ambitlife.Site/Private/Templates/Email/Message.txt
-      subject: Contact from example.net
-      recipientAddress: office@example.net
-      recipientName: 'Office of Company'
-      senderAddress: server@example.net
-      senderName: Server example.net
-      replyToAddress: office@example.net
+      subject: Contact from ambitlife.com.au
+      recipientAddress: maciej@ambitlife.com.au
+      recipientName: 'Noreply ambitlife'
+      senderAddress: noreply@ambitlife.com.au
+      senderName: Noreply ambitlife
+      replyToAddress: noreply@ambitlife.com.au
       format: plaintext
   -
     identifier: 'Neos.Form:Confirmation'
     options:
       message: >
-        <h3>Thank you for your feedback</h3>
-        <p>We will process it as soon as possible.</p>
+        <h3>Thank you for reaching out.</h3>
+        <p>We will get in touch as soon as possible.</p>
