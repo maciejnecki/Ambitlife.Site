@@ -19,46 +19,55 @@ Contents:
 div.columns-50-50 > div.column {
     display: inline-block;
     width: 50%;
+    vertical-align: text-top;
 }
 
 div.columns-75-25 > div.column:first-child {
      display: inline-block;
      width: 75%;
+    vertical-align: text-top;
  }
 
 div.columns-75-25 > div.column:last-child {
     display: inline-block;
     width: 25%;
+    vertical-align: text-top;
 }
 
 div.columns-25-75 > div.column:first-child {
     display: inline-block;
     width: 25%;
+    vertical-align: text-top;
 }
 
 div.columns-25-75 > div.column:last-child {
     display: inline-block;
     width: 75%;
+    vertical-align: text-top;
 }
 
 div.columns-66-33 > div.column:first-child {
     display: inline-block;
     width: 66%;
+    vertical-align: text-top;
 }
 
 div.columns-66-33 > div.column:last-child {
     display: inline-block;
     width: 33%;
+    vertical-align: text-top;
 }
 
 div.columns-33-66 > div.column:first-child {
     display: inline-block;
     width: 33%;
+    vertical-align: text-top;
 }
 
 div.columns-33-66 > div.column:last-child {
     display: inline-block;
     width: 66%;
+    vertical-align: text-top;
 }
 
 /* -------------------------- Columns Triple */
@@ -66,6 +75,7 @@ div.columns-33-66 > div.column:last-child {
 div.columns-33-33-33 > div.column {
     display: inline-block;
     width: 33.33333333333333333333%;
+    vertical-align: text-top;
 }
 
 /* -------------------------- Columns Quadruple */
@@ -73,6 +83,7 @@ div.columns-33-33-33 > div.column {
 div.columns-25-25-25-25 > div.column {
     display: inline-block;
     width: 25%;
+    vertical-align: text-top;
 }
 
 /* -------------------------- Columns Mobile Optimisations */

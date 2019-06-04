@@ -97,7 +97,7 @@
       type: string
       defaultValue: ''
       ui:
-        label: 'Box background Color'
+        label: 'Background Color'
         reloadIfChanged: TRUE
         inspector:
           group: 'advanced'
@@ -115,6 +115,37 @@
                 label: 'Accent'
               --accent-alt-color:
                 label: 'Accent Alt'
+    backgroundImage:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Background Image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+          editorOptions:
+            features:
+              crop: true
+              resize: false
+    backgroundSize:
+      type: string
+      ui:
+        label: 'Adjust background image size'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+          editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
+          editorOptions:
+            placeholder: 'eg. 200px'
+    backgroundPosition:
+      type: string
+      ui:
+        label: 'Adjust background image position'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'advanced'
+          editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
+          editorOptions:
+            placeholder: 'eg. 100'
   childNodes:
     column0:
       type: 'Neos.Neos:ContentCollection'
