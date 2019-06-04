@@ -126,7 +126,6 @@ div.columns-25-25-25-25 > div.column {
 
 div.content {
     padding-top: 70px;
-    padding-bottom: 100px;
 }
 
 div.neos-contentcollection {
@@ -135,6 +134,15 @@ div.neos-contentcollection {
 
 div.neos-nodetypes-html {
     padding: 0;
+}
+
+div.neos-nodetypes-image > figure {
+    margin: 0;
+    background-size: auto;
+}
+
+div.neos-nodetypes-image > figure > img {
+    height: 100%;
 }
 
 .neos-alignment-right {
