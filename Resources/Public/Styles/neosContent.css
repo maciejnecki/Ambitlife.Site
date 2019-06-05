@@ -122,6 +122,10 @@ div.columns-25-25-25-25 > div.column {
 
 /* -------------------------- Content */
 
+img {
+    max-width: 1920px;
+}
+
 div.content {
     padding-top: 70px;
 }
