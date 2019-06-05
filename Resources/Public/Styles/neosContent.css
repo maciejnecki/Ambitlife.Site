@@ -49,22 +49,22 @@ div.columns-50-50 > div, div.columns-75-25 > div, div.columns-25-75 > div, div.c
 
     div.columns-66-33 > div.column:first-child {
         display: inline-block;
-        width: 66%;
+        width: 66.6666666666%;
     }
 
     div.columns-66-33 > div.column:last-child {
         display: inline-block;
-        width: 33%;
+        width: 33.3333333333%;
     }
 
     div.columns-33-66 > div.column:first-child {
         display: inline-block;
-        width: 33%;
+        width: 33.3333333333%;
     }
 
     div.columns-33-66 > div.column:last-child {
         display: inline-block;
-        width: 66%;
+        width: 66.6666666666%;
     }
 
 }
@@ -123,7 +123,7 @@ div.columns-25-25-25-25 > div.column {
 /* -------------------------- Content */
 
 img {
-    max-width: 1920px;
+    max-width: 1200px;
 }
 
 div.content {
