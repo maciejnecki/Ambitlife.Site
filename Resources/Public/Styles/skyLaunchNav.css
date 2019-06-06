@@ -1,8 +1,10 @@
 :root {
     --theme-color: #0b0c0d;
-    --tint-color: #790100;
-    --accent-color: #bf0029;
+    --tint-color: #cc4f14;
+    --accent-color: #e6510b;
     --accent-alt-color: #272a2e;
+    --text-color-light: #0b0c0d;
+    --text-color-dark: #f7f7f7
 }
 
 /* The Overlay (background) */

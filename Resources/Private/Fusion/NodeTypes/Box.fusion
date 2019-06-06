@@ -4,7 +4,7 @@ prototype(Ambitlife.Site:Box) < prototype(Neos.Neos:Content) {
     columnContent {
         nodePath = 'column0'
     }
-    center = ${q(node).property('center')}
+    centering = ${q(node).property('centering')}
     color = ${q(node).property('color')}
     backgroundImage = ${q(node).property('backgroundImage')}
     backgroundSize = ${q(node).property('backgroundSize')}

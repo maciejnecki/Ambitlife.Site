@@ -20,8 +20,8 @@ Contents:
 
 :root {
     --theme-color: #0b0c0d;
-    --tint-color: #790100;
-    --accent-color: #bf0029;
+    --tint-color: #cc4f14;
+    --accent-color: #e6510b;
     --accent-alt-color: #272a2e;
     --text-color-light: #0b0c0d;
     --text-color-dark: #f7f7f7
@@ -65,7 +65,7 @@ html {
 body {
     width: 100%;
     margin: 0 auto;
-    /*margin-bottom: 130px;*/
+    margin-bottom: 130px;
 
     background-color: #f2f2f2;
 
@@ -88,9 +88,17 @@ body {
 
 /* -------------------------- Bounding Boxes */
 
-.center-wrapper {
+.--left-wrapper {
+    text-align: left;
+}
+
+.--center-wrapper {
     text-align: center;
     align-content: center;
+}
+
+.--right-wrapper {
+    text-align: right;
 }
 
 .container-box {

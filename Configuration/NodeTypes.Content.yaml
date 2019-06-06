@@ -67,14 +67,26 @@
           icon: 'icon-adjust'
           position: 1
   properties:
-    center:
-      type: boolean
-      defaultValue: TRUE
+    centering:
+      type: string
+      defaultValue: ''
       ui:
-        label: 'Center content inside?'
+        label: 'Content Alignment'
         reloadIfChanged: TRUE
         inspector:
           group: 'advanced'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Default'
+            values:
+              --default-wrapper:
+                label: 'Default'
+              --left-wrapper:
+                label: 'Left'
+              --center-wrapper:
+                label: 'Center'
+              --right-wrapper:
+                label: 'Right'
     applyHeight:
       type: boolean
       defaultValue: TRUE
